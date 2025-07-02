@@ -9,6 +9,8 @@ This project demonstrates a fully serverless file upload and metadata processing
 - AWS CloudWatch: Logging
 
 ## 📌 Architecture
+![Serverless-Architecture](https://github.com/user-attachments/assets/ff045f7f-e69e-4d87-b43a-3e43a774fa56)
+
 
 1. User uploads file to S3
 2. S3 triggers Lambda on upload (PUT)
@@ -20,19 +22,3 @@ This project demonstrates a fully serverless file upload and metadata processing
 - Real-time processing of uploaded files
 - Automatic metadata extraction
 - Serverless, scalable design
-
-## 📁 Folder Structure
-
-serverless-file-upload-pipeline/
-├── lambda/
-│ └── handler.py
-└── README.md
-
-
-## 🔒 IAM Permissions
-Ensure Lambda role has:
-- `AmazonS3ReadOnlyAccess`
-- `AmazonDynamoDBFullAccess`
-- `AWSLambdaBasicExecutionRole`
-
-## 📸 Screenshots
